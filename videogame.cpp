@@ -298,6 +298,7 @@ void VideoGame::elegirCivi()
         cout << "Digite opcion: ";
         cin >> o;
         cin.ignore();
+        cout << endl;
 
         if (o == 1)
         {
@@ -370,64 +371,5 @@ void VideoGame::elegirCivi()
         {
             cout << "Opcion no valida" << endl;
         }
-
-        // else
-        // {
-        //     for (size_t i = 0; i < civilizacion.size(); i++)
-        //     {
-        //         Civilizacion &c = civilizacion[i];
-
-        //         cout << "" << i + 1 << ") " << c.getNombre() << endl;
-        //     }
-
-        //     cout << "0)Salir" << endl
-        //          << endl;
-
-        //     int x;
-
-        //     cout << "MENU DE ALDEANO Y BARCOS" << endl
-        //          << endl;
-
-        //     cout << "1.- Menu aldeanos" << endl;
-        //     cout << "2.- Menu barcos" << endl;
-
-        //     cout << "Digite opcion: ";
-        //     cin >> x;
-        //     cin.ignore();
-
-        //     cout << endl
-        //          << endl;
-
-        //     if (x > civilizacion.size())
-        //     {
-        //         cout << "Digite una opcion valida" << endl;
-        //     }
-        //     else
-        //     {
-        //         if (x == 1)
-        //         {
-        //             Civilizacion &aldea = civilizacion[x - 1];
-
-        //             menu(aldea);
-        //         }
-        //         else if (x == 2)
-        //         {
-        //             Civilizacion &barquitos = civilizacion[x - 1];
-
-        //             menuBarcos(barquitos);
-        //         }
-        //     }
-        //     //     else if (x == 1){
-        //     //         Civilizacion &aldea = civilizacion[x-1];
-
-        //     //         menu(aldea);
-        //     //     }
-        //     //     else if (x == 2){
-        //     //         Civilizacion &barquitos = civilizacion[x-1];
-
-        //     //         menuBarcos(barquitos);
-        //     //     }
-        //     // }
-        // }
     }
 }

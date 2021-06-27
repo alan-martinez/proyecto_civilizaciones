@@ -13,9 +13,6 @@ class Barco
 {
     //Agregar a la clase Barco un stack de la clase Guerrero
     stack <Guerrero> guerrero;
-
-    stack <Guerrero> copias();
-    //vector <Guerrero> copia;
     // Implementar la clase Barco, la cual tendrá los siguientes atributos³:
 
     int id; // - id
@@ -51,6 +48,7 @@ public:
     // - Tope *top()*.
     // void topeGuerrero (const Guerrero &g);
     void topeGuerrero ();
+    void mostrar();
 
     //void elegirTipo ()
 

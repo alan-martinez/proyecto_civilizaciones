@@ -13,7 +13,7 @@ using namespace std;
 
 class Guerrero
 {
-    string id; // - id
+    int id; // - id
     int salud; //- salud (0 - 100) 
     float fuerza; //- salud (0.0 - 60.0)
     float escudo; // - escudo (0.0 - 30.0)
@@ -22,12 +22,12 @@ class Guerrero
 
 public:
     Guerrero(){}
-    Guerrero( const string  &id, int salud, float fuerza, float escudo, const string  &tipo)
+    Guerrero( int id, int salud, float fuerza, float escudo, const string  &tipo)
     :id(id), salud(salud), fuerza(fuerza), escudo(escudo), tipo(tipo){}
 
 
-    void setId(const string  &id);
-    string getId() const;
+    void setId(int id);
+    int getId() const;
 
     void setSalud(int salud);
     int getSalud() const;

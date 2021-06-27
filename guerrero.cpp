@@ -1,11 +1,11 @@
 #include "guerrero.h"
 
-void Guerrero::setId(const string &id)
+void Guerrero::setId(int id)
 {
     this->id = id;
 }
 
-string Guerrero::getId() const
+int Guerrero::getId() const
 {
     return id;
 }

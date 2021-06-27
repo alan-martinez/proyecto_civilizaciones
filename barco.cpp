@@ -70,3 +70,22 @@ void Barco::topeGuerrero()
     cout << guerrero.top() << endl;
 }
 
+void Barco::mostrar()
+{
+    stack <Guerrero> copia(guerrero);
+
+    // cout << setw(10) << "ID";
+    // cout << setw(15) << "Salud";
+    // cout << setw(10) << "Fuerza";
+    // cout << setw(15) << "Escudo";
+    // cout << setw(15) << "Tipo";
+    cout << "ID        Salud     Fuerza         Escudo      Tipo" << endl;
+    while (! copia.empty())
+    {
+        auto const &g = copia.top();
+        cout << g << endl;
+
+        copia.pop();
+    }
+}
+

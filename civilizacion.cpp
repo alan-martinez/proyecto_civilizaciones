@@ -356,7 +356,6 @@ void Civilizacion::mostrarBarcos(Civilizacion &c)
 void Civilizacion::buscarBarcos(Civilizacion &c)
 {
     Guerrero guerrero;
-    Guerrero c (guerrero);
 
     int id;
 
@@ -400,14 +399,14 @@ void Civilizacion::buscarBarcos(Civilizacion &c)
                     {
                         Guerrero guerrero;
                         int salud;
-                        string id;
+                        int id;
                         float fuerza, escudo;
                         //string tipo;
                         string tipo;
 
                         cout << "Id guerrero: " << endl;
-                        // cin >> id; cin.ignore();
-                        getline(cin, id); cin.ignore();
+                        cin >> id; cin.ignore();
+                        //getline(cin, id); cin.ignore();
                         guerrero.setId(id);
 
                         cout << "Salud: (0-100) "<< endl;
@@ -436,35 +435,21 @@ void Civilizacion::buscarBarcos(Civilizacion &c)
                         Guerrero guerrero;
                         b->eliminarGuerrero(guerrero);
                     }
+                break;
             case 3:
                     {
-                        Guerrero guerrero;
+                        //3Guerrero guerrero;
                         b->topeGuerrero();
 
                         //cout << &b;
                         cout << endl;
                         //cout << &guerrero;
                     }
+                break;
             case 4:
                     {
                         // Guerrero c;
-                        // // Guerrero guerrero;
-                        // // Guerrero copia(guerrero);
-
-                        // // Guerrero copias(guerrero);
-                        // // Guerrero guerrero;
-                        // auto const &e = c.top();
-
-                        // cout << e << endl;
-
-                        // copia.pop();
-                        // {
-                        // //     auto const &e = copia.top();
-                        // //     cout << e << endl;
-
-                        // //     copia.pop();
-                        // }
-                        //stack <Guerrero> copia (guerrero);
+                        b->mostrar();
                     }
             case 0:
                 break;
