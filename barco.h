@@ -7,12 +7,14 @@
 #include <iostream>
 #include <iomanip>
 
+
+
 class Barco
 {
     //Agregar a la clase Barco un stack de la clase Guerrero
     stack <Guerrero> guerrero;
 
-    //stack <Guerrero> copia(Guerrero);
+    stack <Guerrero> copias();
     //vector <Guerrero> copia;
     // Implementar la clase Barco, la cual tendrá los siguientes atributos³:
 
@@ -47,7 +49,10 @@ public:
     // - Eliminar Guerrero *pop()*.
     void eliminarGuerrero (const Guerrero &g);
     // - Tope *top()*.
-    void topeGuerrero (const Guerrero &g);
+    // void topeGuerrero (const Guerrero &g);
+    void topeGuerrero ();
+
+    //void elegirTipo ()
 
     friend ostream& operator<<(ostream &out, const Barco &b)
     {

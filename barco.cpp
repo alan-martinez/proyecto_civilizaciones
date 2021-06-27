@@ -61,12 +61,12 @@ void Barco::eliminarGuerrero(const Guerrero &g)
     guerrero.pop();
 }
 
-void Barco::topeGuerrero(const Guerrero &g)
+void Barco::topeGuerrero()
 {
-    auto const &e = guerrero.top();
+    // auto const &e = guerrero.top();
 
-    cout << "id        salud     fuerza         escudo    tipo" << endl;
-    cout << e << endl;
-    //cout << guerrero.top();
+    cout << "ID        Salud     Fuerza         Escudo      Tipo" << endl;
+    // cout << e << endl;
+    cout << guerrero.top() << endl;
 }
 
